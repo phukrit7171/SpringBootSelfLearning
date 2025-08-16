@@ -7,12 +7,7 @@ import edu.phukrit.learning.models.UserModel;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserModel, Long> {
-    // Additional query methods can be defined here if needed 
-    // Main logic methods will be automatically implemented by Spring Data JPA
-
-    public UserModel findByFname(String fname);
-    public UserModel findByLname(String lname);
-    public UserModel findByFnameBeginWith(String fnamePrefix);
-    public UserModel findByLnameBeginWith(String lnamePrefix);
-    public UserModel findByFnameAndLname(String fname, String lname);
+    // Additional query methods can be defined here if needed
+    // For example, findByFname, findByLname, etc.
+    // JpaRepository provides basic CRUD operations out of the box
 }
