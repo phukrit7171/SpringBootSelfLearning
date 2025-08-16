@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.phukrit.learning.models.UserModel;
 import edu.phukrit.learning.repositories.UserRepository;
-import edu.phukrit.learning.dtos.User;
+import edu.phukrit.learning.dtos.UserDto;
 
 @RestController
 @RequestMapping("/api/users")
@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @PostMapping
-    public UserModel createUser(@RequestBody User user) {
+    public UserModel createUser(@RequestBody UserDto user) {
         UserModel newUser = new UserModel(user.getFname(), user.getLname());
         return userRepository.save(newUser);
     }
