@@ -1,14 +1,14 @@
 package edu.phukrit.learning.dtos;
 
-public class User {
+public class UserDto {
     private Long id;
     private String fname;
     private String lname;
 
-    public User() {
+    public UserDto() {
     }
 
-    public User(Long id, String fname, String lname) {
+    public UserDto(Long id, String fname, String lname) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;

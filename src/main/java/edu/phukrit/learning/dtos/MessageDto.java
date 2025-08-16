@@ -2,14 +2,14 @@ package edu.phukrit.learning.dtos;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 
-public class Message {
+public class MessageDto {
     @JsonAlias("body")
     private String content;
 
-    public Message() {
+    public MessageDto() {
     }
 
-    public Message(String content) {
+    public MessageDto(String content) {
         this.content = content;
     }
 

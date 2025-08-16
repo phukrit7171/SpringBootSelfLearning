@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import edu.phukrit.learning.dtos.Message;
 
-import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * HelloController is a simple controller that handles requests to the "/api/hello" endpoint.
