@@ -55,6 +55,6 @@ public class UserModel {
 
     @Override
     public String toString() {
-        return "UserModel [id=" + id + ", fname=" + fname + ", lname=" + lname + "]";
+        return "User {id=" + id + ", fname=" + fname + ", lname=" + lname + "}";
     }
 }
