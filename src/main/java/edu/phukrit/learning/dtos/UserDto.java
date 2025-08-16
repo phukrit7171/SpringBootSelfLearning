@@ -1,40 +1,14 @@
 package edu.phukrit.learning.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserDto {
     private Long id;
     private String fname;
     private String lname;
-
-    public UserDto() {
-    }
-
-    public UserDto(Long id, String fname, String lname) {
-        this.id = id;
-        this.fname = fname;
-        this.lname = lname;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFname() {
-        return fname;
-    }
-
-    public void setFname(String fname) {
-        this.fname = fname;
-    }
-
-    public String getLname() {
-        return lname;
-    }
-
-    public void setLname(String lname) {
-        this.lname = lname;
-    }
 }

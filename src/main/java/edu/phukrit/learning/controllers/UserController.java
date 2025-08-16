@@ -18,10 +18,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    public UserController() {
-        // Default constructor
-    }
-
     @GetMapping
     public List<UserDto> getAllUsers(){
         return userService.getAllUsersAsDto();
