@@ -20,16 +20,15 @@ public class UserService {
     }
 
     public List<UserDto> getAllUsersAsDto() {
-        // 1. ไปเอาวัตถุดิบดิบ (UserModel) มาจากคลังเหมือนเดิม
+        // Fetch all UserModel entities from the repository
         List<UserModel> userModels = userRepository.findAll();
 
-        // 2. แปลงร่าง! (หัวใจสำคัญอยู่ตรงนี้)
-        // เราจะวนลูป userModels ทีละตัว แล้วสร้าง UserDto ใหม่จากข้อมูลของมัน
+        // Convert List<UserModel> to List<UserDto>
         List<UserDto> userDtos = userModels.stream()
                 .map(user -> new UserDto(user.getId(), user.getFname(), user.getLname()))
                 .collect(Collectors.toList());
 
-        // 3. คืนค่าเป็นอาหารที่จัดจานสวยงามแล้ว (UserDto)
+
         return userDtos;
     }
 
